@@ -1,4 +1,5 @@
-import ProductDetailComponent from "@/Components/modal/ProductDetailComponent";
+import ProductDetailCardComponent from "@/Components/products/ProductDetailCardComponent";
+
 // get single product detail
 const getProductById = async (productId: string) => {
   try {
@@ -44,7 +45,7 @@ export default async function ProductDetailPage({
   return (
 
     <section>
-      <ProductDetailComponent
+      <ProductDetailCardComponent
         uuid={product.uuid}
         thumbnail={product.thumbnail}
         name={product.name}

@@ -1,4 +1,5 @@
-import ProductDetailComponent from "@/Components/modal/ProductDetailComponent";
+import { ProductDetailModalComponent } from "@/Components/modal/ProductDetailModalComponent";
+
 
 
 export default async function ProductDetail({
@@ -11,7 +12,7 @@ export default async function ProductDetail({
 
   return (
     <div>
-      <ProductDetailComponent
+      <ProductDetailModalComponent
         thumbnail={data.thumbnail}
         name={data.name}
         description={data.description}

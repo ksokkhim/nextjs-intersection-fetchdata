@@ -1,4 +1,4 @@
-import { ProductCardComponent } from '@/Components/products/ProductCardComponent';
+import { ProductDetailModalComponent } from '@/Components/modal/ProductDetailModalComponent';
 import { ProductType } from '@/lib/product-type/product';
 import Link from 'next/link'
 import { Suspense, use } from 'react';
@@ -40,7 +40,7 @@ function ProductList() {
     <div className="flex gap-5">
       {
         products?.content?.map(({ uuid, thumbnail, name, priceOut }: ProductType) => (
-          <ProductCardComponent
+          <ProductDetailModalComponent
             uuid={uuid}
             key={uuid}
             thumbnail={thumbnail}

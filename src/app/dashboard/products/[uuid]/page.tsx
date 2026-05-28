@@ -1,9 +1,8 @@
 
-}
-import { ProductType } from "@/lib/product-v2/product";
+import { ProductType } from "@/lib/product-type/product";
 
 import { fetchDetailCard } from "../../@products/products/(..)products/[uuid]/page";
-import ProductDetailComponent from "@/Components/modal/ProductDetailModalComponent";
+import { ProductDetailModalComponent } from "@/Components/modal/ProductDetailModalComponent";
 
 
 
@@ -18,4 +17,5 @@ export default async function ProductDetailPage({
 
   const data: ProductType = await fetchDetailCard(uuid);
 
-  return <ProductDetailComponent data={data} />;
+  return <ProductDetailModalComponent data={data} />;
+}
